@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    }
+    
+    .game-container {
+    position: relative;
+    width: 800px;
+    height: 400px;
+    border: 2px solid #000;
+    background-color: #fff;
+    overflow: hidden;
+    }
+    
+    .player {
+    position: absolute;
+    bottom: 0;
+    width: 50px;
+    height: 50px;
+    background-color: green;
+    }
+    
+    .obstacle {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    animation: moveObstacle 3s infinite linear;
+    }
+    
+    @keyframes moveObstacle {
+    0% {
+    right: 0;
+    }
+    100% {
+    right: 800px;
+    }
+    }
+    
+    .score {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+    }
+    删除
+    未选择文件
+    
